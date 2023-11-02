@@ -19,7 +19,6 @@ else{
     message.onload=function(){
         var data=message.response;
         var result=JSON.parse(data);
-        console.log(result);
         for(var i=0;i<result.length;i++){
             console.log(result[i].flags.png);
         }
@@ -33,7 +32,6 @@ request1.send();
 request1.onload=function(){
     var data1=request1.response;
     var result1=JSON.parse(data1);
-    console.log(result1);
     for(var i=0;i<result1.length;i++){
         console.log(result1[i].name.common,result1[i].region,result1[i].subregion,result1[i].population);
     }
